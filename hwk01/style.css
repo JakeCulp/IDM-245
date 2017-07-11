@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+
+}
+
+h1 {
+  font-family: 'Abril Fatface', cursive;
+  text-align: center;
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  max-width: 50rem;
+  line-height: 1.5rem;
+}
+img {
+  width: 50%;
+  max-width: 30rem;
+  height: auto;
+}
+
+hr {
+  border-top: 1px dotted #8c8b8b;
+}
+
+@media screen and (max-width:37.5rem) {
+  body {
+    line-height: 2rem;
+
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+
+}
