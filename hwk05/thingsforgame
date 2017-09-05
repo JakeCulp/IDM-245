@@ -1,0 +1,24 @@
+List of things to add:
+
+// - Add jump to ‘spacebar’
+//- if the user reaches end of map, they win
+//	- if not they lose
+// - reaching your goal before the time runs out will multiple score by 2x
+// - don't reach your goal before the time runs out, multiple score by 0.5x
+- when a player hits a coffee cup, charger, or textbook, they get 100 points
+- when a player hits a professor, student, or car, they lose 100 points
+//	- player must avoid these objects by jumping over them
+- if a character hits more than 5 bad objects, they automatically lose
+// - bad and good objects will be randomly generated and placed onto the screen
+- need to add hit indicators for when a user hits a good or bad object
+	- sounds?
+	- screen changes color?
+
+// - create function that will randomly generate a number for the timer that when it hits zero will call a function that will generate a random number that will be the key to the item in the array
+
+
+
+
+Stretch goal:
+
+- allow character to move up and down on road to avoid obstacles

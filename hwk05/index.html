@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Race To Westphal</title>
+  <script type="text/javascript">
+    WebFontConfig = {
+      google: {
+        families: ['VT323']
+      }
+    };
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })();
+
+  </script>
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="phaser.min.js"></script>
+  <script src="Boot.js"></script>
+  <script src="Preloader.js"></script>
+  <script src="Main.js"></script>
+  <script src="Play.js"></script>
+  <script src="Winner.js"></script>
+  <script src="Loser.js"></script>
+  <script src="howtoplay.js"></script>
+
+</head>
+
+<body>
+  <div id="phaser-canvas"></div>
+  <script type="text/javascript">
+    window.onload = function() {
+      console.log('windows loaded');
+      //
+      var game = new Phaser.Game(960, 720, Phaser.AUTO, 'phaser-canvas',);
+
+      // Add game states
+      game.state.add('Boot', gameObj.Boot);
+      game.state.add('Preloader', gameObj.Preloader);
+      game.state.add('Main', gameObj.Main);
+      game.state.add('Play', gameObj.Play);
+      game.state.add('Winner', gameObj.Winner);
+      game.state.add('Loser', gameObj.Loser);
+      game.state.add('howtoplay', gameObj.howtoplay);
+      // Start game
+      game.state.start('Boot');
+
+
+    }; // windows.onload
+
+  </script>
+</body>
+
+</html>
